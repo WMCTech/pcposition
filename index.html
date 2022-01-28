@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pc position</title>
+
+
+    <style type="text/css" media="screen">
+    
+        :root{
+        /* zoom: 250%; */
+        color: #FDFEFF;
+        margin: 5%;
+        padding: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align:center; 
+        font-size: 3vh;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1{
+     color:#cc0000;
+     padding: 0;
+     margin: 0;
+     font-size: 20vh;
+    }
+    div{
+        /* color:#343434 */
+        background-color: #343434;
+        text-align:left;
+        font-size: 5vh;
+    }
+    form{
+         margin:2vh;
+        padding:auto;
+        }
+    </style>
+    </head>
+    <script>
+
+    let pc_site_number = 0;
+    // document.body.style.zoom="250%"
+    function plus(){
+        pc_site_number++;
+        document.getElementById("num").innerHTML= pc_site_number;
+    }
+
+    function minus(){
+        pc_site_number--;
+        document.getElementById("num").innerHTML = pc_site_number;
+
+        if (pc_site_number == -1){
+
+            pc_site_number = 0
+            document.getElementById("num").innerHTML = pc_site_number;
+
+        }
+    }
+
+    function reset(){
+        pc_site_number = 0
+            document.getElementById("num").innerHTML = pc_site_number;
+    }
+
+    function colorcheck(){
+        
+        document.getElementById("lappy","sassy").style.background="green"
+    }
+    </script>
+    <h1>PC.Dashboard 🧰</h1>
+    <!-- <span id="letter">L</span>
+    <span id="num">0</span>
+    <div></div>
+    <input class="bt" type="button" value="+" onclick="plus()">
+    <input class="bt" type="button" value="-" onclick="minus()">
+    <input class="bt" type="button" value="0" onclick="reset()"> -->
+
+    <!-- create dashboard of check boxes -->
+    <div id="sassy">Laptops:💻</div>
+     <div id="lappy">
+        <input type="checkbox" id="l1" name="scales" onclick="colorcheck() ">
+        <label for="scales">L1</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">L2</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">L3</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">L4</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">L5</label>
+
+        <input type="checkbox" id="scales" name="L0">
+        <label for="L0">L6</label>
+
+        <input type="checkbox" id="scales" name="L0">
+        <label for="L0">L7</label>
+
+        <input type="checkbox" id="L0" name="L0">
+        <label for="L0">L8</label>
+
+        <input type="checkbox" id="L0" name="L0">
+        <label for="L0">L9</label>
+
+        <input type="checkbox" id="L0" name="L0">
+        <label for="L0">L10</label>
+         
+      </div>
+
+      <br>
+
+      <div>Desktop:🖥️</div>
+     <div>
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">D1</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">D2</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">D3</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">D4</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">D5</label>
+
+        <input type="checkbox" id="scales" name="L0">
+        <label for="L0">D6</label>
+
+        <input type="checkbox" id="scales" name="L0">
+        <label for="L0">D7</label>
+
+        <input type="checkbox" id="L0" name="L0">
+        <label for="L0">D8</label>
+
+        <input type="checkbox" id="L0" name="L0">
+        <label for="L0">D9</label>
+
+        <input type="checkbox" id="D10" name="D10">
+        <label for="D10">D10</label>
+      </div>
+
+      <br>
+
+      <div>Batteries:🔋</div>
+     <div>
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">L1</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">L2</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">L3</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">L4</label>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">L5</label>
+      </div>
+ <footer style="color: black;">Made by WMC © 2022</footer>
+
+<body>
+    
+</body>
+</html>
+
